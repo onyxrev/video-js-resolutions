@@ -8,7 +8,7 @@ http://vidcaster.github.io/video-js-resolutions
 
 **To Use:**
 
-* Include the plugin in the standard way.  See https://github.com/videojs/video.js/blob/master/docs/plugins.md
+* Include the plugin in the standard way.  See https://github.com/videojs/video.js/blob/master/docs/guides/plugins.md
 * Also include video-js-resolutions.css in the folder where your video-js.css file lives.
 
 **Here's how to specify multiple streams:**
