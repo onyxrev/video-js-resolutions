@@ -306,7 +306,8 @@ videojs.plugin('resolutions', function(options) {
 
     // when the technology is re-started, kick off the new stream
     this.ready(function() {
-      this.one('loadeddata', vjs.bind(this, function() {
+      var event = (this.techName === "Flash" ? 'loadedmetadata' : 'loadeddata');
+      this.one(event, vjs.bind(this, function() {
         this.currentTime(curTime);
       }));
 
