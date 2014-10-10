@@ -230,7 +230,10 @@ videojs.plugin('resolutions', function(options) {
     // }
     selectResolution: function(typeSources) {
       var defaultRes = 0;
-      var supportsLocalStorage = !!window.localStorage;
+      var supportsLocalStorage = false;
+      try {
+       supportsLocalStorage = !!window.localStorage;
+      } catch(e) {}
 
       // check to see if any sources are marked as default
       videojs.obj.each(typeSources, function(i, s){
